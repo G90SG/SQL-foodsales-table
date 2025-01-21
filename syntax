@@ -1,0 +1,20 @@
+select * from foodsales
+select date, city, qty from foodsales
+select * from foodsales
+where region = 'east';
+select * from foodsales
+where qty >= 50
+order by qty;
+select * from foodsales 
+where city = 'boston';
+SELECT [Product], SUM([Qty]) AS total_quantity_sold
+FROM [dbo].[foodsales]
+GROUP BY [Product];
+select avg([UnitPrice]) as avunitprice
+from foodsales;
+select distinct region from foodsales;
+select [Region], count([Region]) as total
+from [dbo].[foodsales]
+group by [Region];
+select * from foodsales
+order by qty desc;
